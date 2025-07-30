@@ -105,7 +105,8 @@ const resolveTypeName = (typeName: string) => {
     return name;
   }
   const noBlankName = name.replace(/ +/g, '');
-  return pinyin.convertToPinyin(noBlankName, '', true);
+  // return pinyin.convertToPinyin(noBlankName, '', true);
+  return noBlankName;
 };
 
 function getRefName(refObject: any): string {
